@@ -67,30 +67,8 @@ a:hover { color: var(--color-primary-dark); }
 }
 
 .logo span {
-  color: var(--color-primary);
+  color: var(--color-text);
   font-weight: 600;
-}
-
-span.logo-pop,
-span.logo-care {
-  font-weight: 700;
-}
-
-span.logo-pop {
-  background: linear-gradient(135deg, #cfe6ff, #6fa8f5);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #3a3a3a;
-}
-
-span.logo-care {
-  background: linear-gradient(135deg, #f4f4f4 0%, #b8b8b8 30%, #ffffff 55%, #9a9a9a 80%, #e6e6e6 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
 }
 
 .site-nav {
