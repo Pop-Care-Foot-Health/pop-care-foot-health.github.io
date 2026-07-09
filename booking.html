@@ -1,0 +1,54 @@
+---
+layout: default
+title: Booking
+---
+
+<section class="section page-header">
+  <div class="container">
+    <h1>Book an Appointment</h1>
+    <p class="section-sub">Fill out the form below and we'll confirm your appointment shortly.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container form-wrap">
+    <form action="https://formspree.io/f/xaqgvdwe" method="POST" class="site-form">
+      <label>
+        Full Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Phone
+        <input type="tel" name="phone" required>
+      </label>
+      <label>
+        Service Needed
+        <select name="service" required>
+          <option value="">Select a service</option>
+          <option value="Nail & Skin Care">Nail & Skin Care</option>
+          <option value="Ingrown Toenails">Ingrown Toenails</option>
+          <option value="Diabetic Foot Care">Diabetic Foot Care</option>
+          <option value="General Foot Health">General Foot Health</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+      <label>
+        Preferred Date
+        <input type="date" name="preferred_date" required>
+      </label>
+      <label>
+        Preferred Time
+        <input type="time" name="preferred_time" required>
+      </label>
+      <label>
+        Additional Notes
+        <textarea name="notes" rows="4"></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary">Request Appointment</button>
+    </form>
+  </div>
+</section>

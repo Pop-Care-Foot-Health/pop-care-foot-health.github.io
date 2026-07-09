@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="{{ '/' | relative_url }}">Pop Care <span>Foot Health</span></a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+        <a href="{{ '/location.html' | relative_url }}" class="{% if page.url == '/location.html' %}active{% endif %}">Location</a>
+        <a href="{{ '/contact.html' | relative_url }}" class="{% if page.url == '/contact.html' %}active{% endif %}">Contact</a>
+        <a href="{{ '/booking.html' | relative_url }}" class="btn-nav {% if page.url == '/booking.html' %}active{% endif %}">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h3>Pop Care Foot Health</h3>
+        <p>Compassionate, modern foot care for every step of life.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/location.html' | relative_url }}">Location</a>
+        <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+        <a href="{{ '/booking.html' | relative_url }}">Book Now</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>123 Main Street<br>Your City, ST 12345</p>
+        <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+        <p><a href="mailto:hello@popcarefoothealth.com">hello@popcarefoothealth.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Pop Care Foot Health. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
