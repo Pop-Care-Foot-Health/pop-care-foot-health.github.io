@@ -1,7 +1,7 @@
 :root {
-  --color-primary: #2a9d8f;
-  --color-primary-dark: #21807a;
-  --color-primary-light: #e8f6f4;
+  --color-primary: #5396fc;
+  --color-primary-dark: #294164;
+  --color-primary-light: #d1d9d8;
   --color-text: #263238;
   --color-text-muted: #5f6b6d;
   --color-bg: #ffffff;
@@ -156,9 +156,25 @@ a:hover { color: var(--color-primary-dark); }
 
 /* Hero */
 .hero {
-  background: linear-gradient(180deg, var(--color-primary-light) 0%, var(--color-bg) 100%);
-  padding: 96px 0 80px;
+  position: relative;
+  padding: 120px 0;
   text-align: center;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.75) 100%),
+    url('/assets/images/homepage.jpg') center 30% / cover no-repeat;
+}
+
+.hero-inner {
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 40px;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 28px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .hero h1 {
