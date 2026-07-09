@@ -62,7 +62,6 @@ a:hover { color: var(--color-primary-dark); }
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1.25rem;
@@ -74,21 +73,26 @@ a:hover { color: var(--color-primary-dark); }
   font-weight: 600;
 }
 
-.logo-img {
-  height: 36px;
-  width: 36px;
-  border-radius: 8px;
-  object-fit: cover;
-  display: block;
+.logo-pop,
+.logo-care {
+  font-weight: 700;
 }
 
-.footer-logo-img {
-  height: 32px;
-  width: 32px;
-  border-radius: 8px;
-  object-fit: cover;
-  margin-right: 10px;
-  vertical-align: middle;
+.logo-pop {
+  background: linear-gradient(135deg, #cfe6ff, #6fa8f5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #3a3a3a;
+}
+
+.logo-care {
+  background: linear-gradient(135deg, #f4f4f4 0%, #b8b8b8 30%, #ffffff 55%, #9a9a9a 80%, #e6e6e6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .site-nav {
